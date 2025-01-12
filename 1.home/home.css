@@ -1,0 +1,111 @@
+/* Styling the fonts*/
+#concept {
+    color: #FDFFFD;
+}
+#concept li {
+    font-family: 'Alumni Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+/* Styling the page*/
+img {
+    border-radius: 8px/8px;
+}
+img:nth-child(1) {
+    object-position: 56px 0;
+}
+.contents {
+    position: relative;
+    height: 400px;
+}
+.contents h2 {
+    transform: rotate(90deg);
+    height: fit-content;
+    position: absolute;
+    margin: unset;
+    transform: translate(-128px, 140px) rotate(-90deg);
+}
+.contents p{
+    width: 292px;
+    margin-left: 92px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img:nth-child(3) {
+    width: 350px;
+    height: 267px;
+    object-fit: cover;
+    object-position: 0px -32px;
+    transform: translateX(-70px);
+}
+img:nth-child(4) {
+    height: 449px;
+    width: 359px;
+    object-fit: cover;
+    object-position: -150px 0;
+    transform: translate(40px, -72px);
+}
+
+/*aesthetic*/
+#aesthetic img{
+    height: 500px;
+    object-fit: cover;
+}
+
+/*second_row*/
+#second_row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
+    margin-bottom: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
+}
+
+#second_row img {
+    width: 100%;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1050px) {
+    main {
+        margin-bottom: 20vh;
+    }
+    #concept {
+        margin-top: 8vh;
+        margin-bottom: 8vh;
+    }
+    #second_row {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    header {
+        background-position: center;
+    }
+    #intro {
+        margin-bottom: 5vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    #intro p {
+        width: 80%
+    }
+    #second_row {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: unset;
+    }
+    #second_row img {
+        height: 50vh;
+        width: 100%;
+    }
+    #concept {
+        grid-row: 1/2;
+    }
+    #concept li {
+        border-left: 2px solid #ddd;
+    }
+}
+/*transition: transform 150ms cubic-bezier(1, 0.26, 0.43, 1.02);

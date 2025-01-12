@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/*--- reset css ---*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*--- Styling the fonts ---*/
+:root {
+    --black: #2E282A;
+    --white: #FFFBF6;
+    --bg-gray: #E4DFDA;
+    --dk-blue: #247ABA;
+    
+}
+html {
+    font-family:'Crimson Text', 'Sarabun', sans-serif;
+    color: var(--black);
+}
+p {
+    font-family:'Roboto', 'Sarabun', sans-serif;
+}
+.font-size-S {
+    font-size: clamp(0.75rem, 0.659rem + 0.45vw, 1rem);
+}
+.font-size-M {
+    font-size: clamp(1rem, 0.855rem + 0.73vw, 1.4rem);
+}
+.font-size-L {
+    font-size: 64px;
+}
+.lable {
+    font-size: clamp(2.5rem, 1.227rem + 6.36vw, 6rem);
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+.all-caps {
+    text-transform: uppercase;
+}
+nav a{
+    font-size: clamp(1rem, 0.682rem + 1.59vw, 1.875rem);
+    color: #eaeaea;
+    font-family:'Sarabun', 'Saira', sans-serif;
+    text-align: center;
+}
+nav a:current {
+    color: lightblue;
+    border-bottom:2px solid #00B0F0;
+}
+footer {
+    color: var(--dk-blue);
+}
+
+
+/* Styling the page*/
+html {
+    background: var(--bg-gray);
+    overflow-x: unset;
+}
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+header {
+    margin-top: 64px;
+}
+h1 {
+    display: none;
+}
+nav h2 {
+    position: absolute;
+    transform: translateX(48px) rotate(90deg);
+    right: 0;
+}
+nav ul {
+    display: none;
+    text-align: right;
+}
+nav li {
+    display: inline-block;
+    padding: 0 5px;
+    list-style: none;
+    width: 10%;
+    min-width: 90px;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    padding: unset;
+}
+nav li:not(:last-child){
+    border-right:2px solid #ddd;
+}
+main {
+    overflow-x: hidden;
+}
+.cover_img {
+    width: 370px;
+    height: 538px;
+    transform: translateX(-72px);
+}
+
+.contents {
+    margin-top: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
+    margin-bottom: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
+}
+footer {
+    background-color: var(--white);
+    padding: 50px 0px 25px 0px;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1050px){
+    body {
+        background-size: 40%;
+    }
+    .mobile {
+        display: unset;
+    }
+    .pc {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 710px){
+    body {
+        background-size: 60%;
+    }
+    header {
+        background-attachment: unset;
+    }
+    .mobile {
+        display: unset;
+    }
+    .pc {
+        display: none;
+    }
+    footer {
+        padding-top: 30px;
+    }
+}
