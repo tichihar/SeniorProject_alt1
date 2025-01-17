@@ -12,7 +12,8 @@ img {
     border-radius: 8px/8px;
 }
 img:nth-child(2) {
-    object-position: 56px 0;
+    object-position: -4px 0;
+    object-fit: cover;
 }
 .contents {
     position: relative;

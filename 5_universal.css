@@ -58,7 +58,7 @@ html {
     font-family:'Crimson Text', 'Sarabun', sans-serif;
     color: var(--black);
 }
-p {
+nav a, p {
     font-family:'Roboto', 'Sarabun', sans-serif;
 }
 .font-size-S {
@@ -83,9 +83,6 @@ p {
     text-transform: uppercase;
 }
 nav a{
-    font-size: clamp(1rem, 0.682rem + 1.59vw, 1.875rem);
-    color: #eaeaea;
-    font-family:'Sarabun', 'Saira', sans-serif;
     text-align: center;
 }
 nav a:current {
@@ -107,35 +104,67 @@ body {
     overflow-x: hidden;
 }
 header {
-    margin-top: 64px;
+    display: flex;
+    align-items: center;
 }
-h1 {
-    display: none;
+
+.menu-btn {
+    width: 24px;
+    height: 14px;
+    margin-left: auto;
+    position: relative;
 }
-nav h2 {
+.menu-btn span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    border-radius: 8px / 8px;
+    background: var(--black);
     position: absolute;
-    transform: translateX(48px) rotate(90deg);
+}
+.menu-btn span:nth-child(2) {
+    top: 6px;
+}
+.menu-btn span:nth-child(3) {
+    top: 12px;
+}
+
+header h2 {
+    position: absolute;
+    transform: translate(58px, 120px) rotate(90deg);
     right: 0;
 }
+
+nav {
+    width: 75vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: var(--white);
+    z-index: 1;
+}
 nav ul {
-    display: none;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
 }
 nav li {
-    display: inline-block;
+    /* display: inline-block;
     padding: 0 5px;
     list-style: none;
     width: 10%;
     min-width: 90px;
-    text-align: center;
+    text-align: center; */
 }
 nav a {
     text-decoration: none;
-    padding: unset;
+    /* padding: unset; */
 }
-nav li:not(:last-child){
+/* nav li:not(:last-child){
     border-right:2px solid #ddd;
-}
+} */
 
 main {
     overflow-x: hidden;
@@ -151,9 +180,9 @@ main {
     gap: 8px;
 }
 .cover_img {
-    width: 370px;
+    width: 380px;
     height: 538px;
-    transform: translateX(-72px);
+    transform: translateX(-32px);
 }
 
 .contents {
