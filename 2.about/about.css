@@ -1,65 +1,25 @@
-/* Styling the fonts*/
-/*statement*/
-dt {
-    font-size: 1.25em;
-}
-dd {
-    font-size: 3em;
-    font-weight: bold;
-}
-p{
-    font-size: 1em;
-}
-
 /* Styling the page*/
-/*header*/ 
-header {
-    background-image: url('about_IMGs/about_header_img.jpg');
-    background-position-y: 175%;
+/* main */
+.cover-img {
+    object-position: -137px 0px;
 }
 
-/*bio*/
-#bio {
-    display: flex;
-    justify-items: center;
-    gap: clamp(0.625rem, -1.33rem + 9.77vw, 6rem);
-}
-
-/* #bio {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    width: 100%;
-}
-#bio img {
-    /* width: clamp(16.563rem, 15.131rem + 7.16vw, 20.5rem); */
-/*   width: 100
+/* contents */
+.contents img {
+    width: 185px;
     height: auto;
-    margin: 0 auto;
-} */
-
-#bio img {
-    width: clamp(16.563rem, 15.131rem + 7.16vw, 20.5rem);
-    height: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    float: left;
+}
+p {
+    line-height: 1.5;
+    margin: 8px 24px;
 }
 
 /*statement*/
-#statement dl {
-    position: relative;
-    margin:unset;
-    width: clamp(18.75rem, 13.068rem + 28.41vw, 34.375rem);
-    margin-top: 35px;
-
-}
-#statement dt{
-    position: absolute;
-    top: -15px;
-}
 #statement dd {
-    margin: unset;
-    padding: 0.2rem;
-    margin-bottom: 0.2rem;
-    background: linear-gradient(transparent 60%, #16b5dd 60%);
+    line-height: 1.2;
 }
 
 /*gapの付け方が悪くて画面がズレる*/
@@ -67,23 +27,4 @@ header {
     #statement p {
         flex-wrap: wrap;
     }
-}
-
-@media screen and (max-width: 575px) {
-    header {
-        background-position: center;
-    }
-/* bio */
-    #bio img {
-        margin: 0 auto;
-    }
-    #bio{
-        flex-wrap: wrap;
-    }
-    #statement {
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-    /* #bio {
-        grid-template-columns: repeat(1, 1fr);
-    } */
 }

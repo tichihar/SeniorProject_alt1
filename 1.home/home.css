@@ -8,12 +8,8 @@
 }
 
 /* Styling the page*/
-img {
-    border-radius: 8px/8px;
-}
-img:nth-child(2) {
+.cover-img {
     object-position: -4px 0;
-    object-fit: cover;
 }
 .contents {
     position: relative;
@@ -34,14 +30,14 @@ img:nth-child(2) {
     flex-direction: column;
     justify-content: center;
 }
-img:nth-child(4) {
+img:nth-child(3) {
     width: 350px;
     height: 267px;
     object-fit: cover;
     object-position: 0px -32px;
     transform: translateX(-70px);
 }
-img:nth-child(5) {
+img:nth-child(4) {
     height: 449px;
     width: 359px;
     object-fit: cover;

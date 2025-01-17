@@ -54,9 +54,10 @@ table {
     --dk-blue: #247ABA;
     
 }
-html {
+html, dt, dd {
     font-family:'Crimson Text', 'Sarabun', sans-serif;
     color: var(--black);
+    letter-spacing: .5px;
 }
 nav a, p {
     font-family:'Roboto', 'Sarabun', sans-serif;
@@ -93,11 +94,19 @@ nav a:current {
     color: var(--dk-blue);
 }
 nav a {
+    font-size: 16px;
     letter-spacing: 2px;
+    text-decoration: none;
 }
 
 
-/* Styling the page*/
+/*--- universal class styling---*/
+.hidden {
+    display: none;
+}
+
+
+/*--- styling pages ---*/
 html {
     background: var(--bg-gray);
     overflow-x: unset;
@@ -109,9 +118,10 @@ body {
 header {
     display: flex;
     align-items: center;
+    margin-top: 16px;
 }
 
-.menu-btn {
+#menu-btn {
     width: 24px;
     height: 14px;
     margin-left: auto;
@@ -119,7 +129,7 @@ header {
     position: relative;
     z-index: 2;
 }
-.menu-btn span {
+#menu-btn span {
     display: block;
     width: 24px;
     height: 2px;
@@ -127,19 +137,17 @@ header {
     background: var(--black);
     position: absolute;
 }
-.menu-btn span:nth-child(2) {
+#menu-btn span:nth-child(2) {
     top: 6px;
 }
-.menu-btn span:nth-child(3) {
+#menu-btn span:nth-child(3) {
     top: 12px;
 }
-
-header h2 {
-    position: absolute;
-    transform: translate(58px, 120px) rotate(90deg);
-    right: 0;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
-
 nav {
     width: 48vw;
     height: 100vh;
@@ -152,44 +160,37 @@ nav {
 nav ul {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     margin-top: 144px;
     margin-left: 24px;
     width: 124px;
 }
-nav li {
-    /* display: inline-block;
-    padding: 0 5px;
-    list-style: none;
-    width: 10%;
-    min-width: 90px;
-    text-align: center; */
+
+header h2 {
+    position: absolute;
+    transform: translate(58px, 120px) rotate(90deg);
+    right: 0;
 }
-nav a {
-    text-decoration: none;
-    /* padding: unset; */
-}
-/* nav li:not(:last-child){
-    border-right:2px solid #ddd;
-} */
 
 main {
     overflow-x: hidden;
+    margin-top: 16px;
 }
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 4px;
+
+img {
+    border-radius: 8px/8px;
 }
+
 .company-name {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-.cover_img {
+.cover-img {
     width: 380px;
     height: 538px;
     transform: translateX(-32px);
+    object-fit: cover;
 }
 
 .contents {
