@@ -1,17 +1,17 @@
 /* Styling the fonts*/
-#concept {
-    color: #FDFFFD;
+.contents p {
+    letter-spacing: 2px;
+    line-height: 2;
 }
-#concept li {
-    font-family: 'Alumni Sans', sans-serif;
-    font-weight: bold;
-    font-style: italic;
+.logo span {
+    letter-spacing: 1.2px;
 }
+
 /* Styling the page*/
 img {
     border-radius: 8px/8px;
 }
-img:nth-child(1) {
+img:nth-child(2) {
     object-position: 56px 0;
 }
 .contents {
@@ -33,38 +33,19 @@ img:nth-child(1) {
     flex-direction: column;
     justify-content: center;
 }
-img:nth-child(3) {
+img:nth-child(4) {
     width: 350px;
     height: 267px;
     object-fit: cover;
     object-position: 0px -32px;
     transform: translateX(-70px);
 }
-img:nth-child(4) {
+img:nth-child(5) {
     height: 449px;
     width: 359px;
     object-fit: cover;
     object-position: -150px 0;
-    transform: translate(40px, -72px);
-}
-
-/*aesthetic*/
-#aesthetic img{
-    height: 500px;
-    object-fit: cover;
-}
-
-/*second_row*/
-#second_row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    margin-top: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
-    margin-bottom: clamp(0.938rem, -0.994rem + 9.66vw, 6.25rem);
-}
-
-#second_row img {
-    width: 100%;
+    transform: translate(70px, -72px);
 }
 
 @media screen and (min-width: 700px) and (max-width: 1050px) {

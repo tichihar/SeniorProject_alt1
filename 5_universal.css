@@ -62,10 +62,10 @@ p {
     font-family:'Roboto', 'Sarabun', sans-serif;
 }
 .font-size-S {
-    font-size: clamp(0.75rem, 0.659rem + 0.45vw, 1rem);
+    font-size: 12px;
 }
 .font-size-M {
-    font-size: clamp(1rem, 0.855rem + 0.73vw, 1.4rem);
+    font-size: 24px;
 }
 .font-size-L {
     font-size: 64px;
@@ -92,7 +92,7 @@ nav a:current {
     color: lightblue;
     border-bottom:2px solid #00B0F0;
 }
-footer {
+.logo, footer {
     color: var(--dk-blue);
 }
 
@@ -136,8 +136,19 @@ nav a {
 nav li:not(:last-child){
     border-right:2px solid #ddd;
 }
+
 main {
     overflow-x: hidden;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.company-name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 .cover_img {
     width: 370px;
