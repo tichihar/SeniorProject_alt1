@@ -92,6 +92,9 @@ nav a:current {
 .logo, footer {
     color: var(--dk-blue);
 }
+nav a {
+    letter-spacing: 2px;
+}
 
 
 /* Styling the page*/
@@ -112,7 +115,9 @@ header {
     width: 24px;
     height: 14px;
     margin-left: auto;
+    margin-right: 24px;
     position: relative;
+    z-index: 2;
 }
 .menu-btn span {
     display: block;
@@ -136,7 +141,7 @@ header h2 {
 }
 
 nav {
-    width: 75vw;
+    width: 48vw;
     height: 100vh;
     position: absolute;
     right: 0;
@@ -148,7 +153,9 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    align-items: flex-end;
+    margin-top: 144px;
+    margin-left: 24px;
+    width: 124px;
 }
 nav li {
     /* display: inline-block;
