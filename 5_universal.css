@@ -52,7 +52,7 @@ table {
     --white: #FFFBF6;
     --bg-gray: #E4DFDA;
     --dk-blue: #247ABA;
-    
+    --lt-blue: #84ADCA;
 }
 html, dt, dd {
     font-family:'Crimson Text', 'Sarabun', sans-serif;
@@ -70,6 +70,9 @@ nav a, p {
 }
 .font-size-L {
     font-size: 64px;
+}
+.font-siz-btn {
+    font-size: 16px
 }
 .lable {
     font-size: clamp(2.5rem, 1.227rem + 6.36vw, 6rem);
@@ -148,6 +151,10 @@ header {
     align-items: center;
     gap: 4px;
 }
+.logo span {
+    letter-spacing: 1.2px;
+}
+
 nav {
     width: 48vw;
     height: 100vh;
@@ -168,8 +175,7 @@ nav ul {
 
 header h2 {
     position: absolute;
-    transform: translate(58px, 120px) rotate(90deg);
-    right: 0;
+    transform: rotate(90deg);
 }
 
 main {

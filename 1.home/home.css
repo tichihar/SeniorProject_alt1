@@ -1,10 +1,12 @@
 /* Styling the fonts*/
+header h2 {
+    right: -60px;
+    top: 160px;
+}
+
 .contents p {
     letter-spacing: 2px;
     line-height: 2;
-}
-.logo span {
-    letter-spacing: 1.2px;
 }
 
 /* Styling the page*/
