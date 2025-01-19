@@ -22,13 +22,13 @@ header h2 {
     text-align: end;
 }
 .brief p:nth-child(3) {
-    margin-top: 8px;
+    margin-top: 16px;
 }
 .brief p:nth-child(3)::after {
     content: "";
     display: block;
     width: inherit;
-    margin-top: 16px;
+    margin-top: 10px;
     border: .1px solid var(--black);
 }
 .details {
@@ -42,7 +42,7 @@ header h2 {
 }
 .tables {
     display: flex;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 .tables li {
     margin-bottom: 8px;
@@ -58,6 +58,20 @@ header h2 {
     text-align: end;
     margin-top: 8px;
     color: var(--lt-blue);
+}
+
+/*--- Animation ---*/
+.desc-area {
+    overflow: hidden;
+    height: 285px;
+}
+.below {
+    transform: translateY(210px);
+    transition: ease 2s;
+}
+.reveal {
+    transform: translateY(0px);
+    transition: ease 1s;
 }
 
 @media screen and (max-width: 575px){
