@@ -53,8 +53,9 @@ table {
     --bg-gray: #E4DFDA;
     --dk-blue: #247ABA;
     --lt-blue: #84ADCA;
+    --lt-gray: #F6F5F3;
 }
-html, dt, dd {
+html, dt, dd, label, input[type=submit] {
     font-family:'Crimson Text', 'Sarabun', sans-serif;
     color: var(--black);
     letter-spacing: .5px;
@@ -71,7 +72,7 @@ nav a, p {
 .font-size-L {
     font-size: 64px;
 }
-.font-siz-btn {
+.font-size-btn {
     font-size: 16px
 }
 .lable {
